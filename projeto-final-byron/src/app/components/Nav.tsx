@@ -1,37 +1,42 @@
 "use client"
 
 import React, { useState } from 'react'
-import Button from './Button'
-import { IonIcon } from '@ionic/react';
-import { menuOutline } from 'ionicons/icons';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid'
+
 
 const Nav = () => {
-    const [navbar, setNavbar] = useState(false)
+    let [isOpen, setisOpen] = useState(false)
 
   return (
     <div className= 'shadow-md w-full fixed top-0 left-0'>  {/* topo */}
-        <div className='md:flex items-center justify-evenly align-middle bg-gradient-to-bl from-amber-500 to-amber-800 py-4'> {/* menu */}
-            <div className='font-bold text-2xl cursor-pointer flex items-center text-white'>
-                <span>
+        <div className='md:flex justify-between items-center md:px-10 py-4 px-7 bg-gradient-to-l from-amber-500 to-amber-800'>
+            {/* logo aqui */}
+            <div className='flex text-2xl cursor-pointer items-center'>
+                <span className='font-bold text-white'>
                     LOGO
                 </span>
             </div>
-            <div>                
-            </div>
             
-            <ul className='md:flex md:items-center text-lg md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-full md:pl-0 pl-9 transition-all duration-500 ease-in'>
+        <div onClick={() => setisOpen(!isOpen)} className='h-7 w-7 absolute right-8 top-4 cursor-pointer md:hidden text-white'>
+            {
+                isOpen ? <XMarkIcon/> : <Bars3Icon/>
+            }
+
+        </div>
+ 
+            <ul className={`md:flex md:items-center md:pb-0 pb-12 md:static text-lg pl-4 bg-gradient-to-l from-amber-500 to-amber-800 absolute md:z-auto z-[-1] left-0 w-full transition-all duration-500 ease-in ${isOpen ? 'top-12' : 'top-[-490px]'}`}>
                 <li className='navbarLi'><a href="/">Quem Somos</a></li>
                 <li className='navbarLi'><a href="/">Animais Desaparecidos</a></li>
                 <li className='navbarLi'><a href="/">Quero Ajudar</a></li>
                 <li className='navbarLi'><a href="/">Fale Conosco</a></li>
                 <li className='navbarLi'><a href="/">Quero Adotar</a></li>
                 <li className='navbarLi'><a href="/">Quero Doar</a></li>
-                <li className='navbarLi'><a href="/">Entrar</a></li>
+
+                <button className='btn bg-white text-black py-2 px-3 md:ml-8 rounded md:static font-bold'>
+                Entrar
+            </button>
             </ul>
-            <Button>
-                Teste
-                <IonIcon name="menuOutline"></IonIcon>
-            </Button>
+            
         </div>
     </div>
   )
