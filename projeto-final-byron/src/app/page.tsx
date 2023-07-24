@@ -1,13 +1,9 @@
 import Nav from '../app/components/Nav'
 
-const Home = () => 
-{
+export default function Home () {
   return (
-    <>
-    <Nav />
-      <div className="bg-white"></div>
-    </>
+      <>
+      <Nav />
+      </>
   )
 }
-
-export default Home;

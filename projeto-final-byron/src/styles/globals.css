@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+@layer components{
+    .navbarLi{
+        @apply text-white md:ml-8 md:my-0 my-7 hover:text-gray-400 duration-500
+    }
+}
