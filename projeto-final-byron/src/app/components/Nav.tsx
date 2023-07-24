@@ -32,9 +32,9 @@ const Nav = () => {
                 <li className='navbarLi'><a href="/">Quero Adotar</a></li>
                 <li className='navbarLi'><a href="/">Quero Doar</a></li>
 
-                <button className='btn bg-white text-black py-2 px-3 md:ml-8 rounded md:static font-bold'>
+                <button className='btn bg-white text-black py-2 px-3 md:ml-8 rounded font-bold md:absolute md:right-4'>
                 Entrar
-            </button>
+                </button>
             </ul>
             
         </div>
