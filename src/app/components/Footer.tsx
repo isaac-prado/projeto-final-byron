@@ -1,7 +1,5 @@
 "use client"
 
-import logo from "../../../public/footer/Logo.png"
-
 const Footer = () => {
   return (
     <footer className= 'shadow-md w-full border-t-2'>
@@ -33,8 +31,9 @@ const Footer = () => {
 
                 <div className="flex justify-center items-center text-white">
                     <span>Desenvolvido por </span>
-                    <figure><img className="w-60" src="./footer/Logo.png" alt="Logo Byron Solutions" /></figure>
-
+                        <a href="https://byronsolutions.com" target="_blank" className="cursor-pointer">
+                        <figure><img className="w-60 cursor-pointer" src="./footer/Logo.png" alt="Logo Byron Solutions" /></figure>
+                    </a>
                 </div>
 
             </div>
