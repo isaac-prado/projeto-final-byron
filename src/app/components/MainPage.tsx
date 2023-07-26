@@ -21,10 +21,10 @@ const MainPage = () => {
                         <img className="md:h-48 h-32 w-full  rounded-t-lg" src={card.img} alt=""/>
                         <div className="p-4">
                             <h3 className="text-xl font-semibold text-marrom_escuro mb-2">{card.name}</h3>
-                            <div className="tex-lg font-medium text-gray-800">
-                                <p>{card.city}</p> 
-                                <p>{card.animal}</p> 
-                                <p>{card.size}</p> 
+                            <div className="tex-lg font-medium text-gray-800 justify-center items-start">
+                                <p className="flex gap-2 mb-3"><img className="h-6" src="./footer/pin-de-localizacao.png" alt="" />{card.city}</p> 
+                                <p className="flex gap-2 mb-3"><img className="h-6" src="./footer/pata-de-cachorro.png" alt="" />  {card.animal}</p> 
+                                <p className="flex gap-2"><img className="h-6" src="./footer/tamanho-cachorro.png" alt="" />{card.size}</p> 
                             </div>
                         </div>
                     </div>
