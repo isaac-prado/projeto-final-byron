@@ -1,5 +1,7 @@
 "use client"
 
+import logo from "../../../public/footer/Logo.png"
+
 const Footer = () => {
   return (
     <footer className= 'shadow-md w-full border-t-2'>
@@ -14,35 +16,25 @@ const Footer = () => {
                     <li className="footerLi">PERFIL </li>
                 </ul>
                 
-                <div className="flex items-center justify-center gap-16">
-                    <picture>
-                        instagram
-                        <img src="" alt="" />
-                    </picture>
-                    <picture>
-                        facebook
-                        <img src="" alt="" />
-                    </picture>
-                    <picture>
-                        youtube
-                        <img src="" alt="" />
-                    </picture>
-                    <picture>
-                        twitter
-                        <img src="" alt="" />
+                <div className="flex items-center justify-center mt-14">
+                    <picture className="flex justify-center items-center gap-14 w-10">
+                        <img className="cursor-pointer" src="./footer/instagram.png" alt="Instagram" />
+                        <img className="cursor-pointer" src="./footer/facebook.png" alt="Facebook" />
+                        <img className="cursor-pointer" src="./footer/youtube.png" alt="Youtube" />
+                        <img className="cursor-pointer" src="./footer/twitter.png" alt="Twitter" />
                     </picture>
                 </div>
                 
-                <div className="flex justify-center items-center">
+                <div className="flex justify-center items-center m-12">
                     <picture>
-                        LOGO
-                        <img src="" alt="" />
+                        <img className="w-24" src="./footer/segunda-chance.png" alt="" />
                     </picture>
                 </div>
 
                 <div className="flex justify-center items-center text-white">
                     <span>Desenvolvido por </span>
-                    <picture><img src='' alt="Logo Byron Solutions" /></picture>
+                    <figure><img className="w-60" src="./footer/Logo.png" alt="Logo Byron Solutions" /></figure>
+
                 </div>
 
             </div>
