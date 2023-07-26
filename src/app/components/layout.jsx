@@ -1,4 +1,6 @@
 import Head from 'next/head';
+import Nav from './Nav';
+import Footer from './Footer';
 
 export const siteTitle = "Login Signup Nextjs";
 
@@ -22,8 +24,12 @@ export default function Layout({ pageTitle, children }) {
         <meta name="robots" content="index, follow"/>
         <meta property="og:type" content="Website" />
         <title>{pageTitle}</title>
+
       </Head>
+      
+      <Nav />
       <main>{children}</main>
+      <Footer />
     </div>
   );
 }

@@ -9,7 +9,7 @@ const Nav = () => {
 
   return (
     <div className= 'shadow-md w-full fixed top-0 left-0'>  {/* topo */}
-        <div className='md:flex justify-between items-center md:px-10 py-4 px-7 bg-amber-800'>
+        <div className='md:flex justify-between items-center md:px-10 py-4 px-7 bg-marrom_escuro'>
             {/* logo aqui */}
             <div className='flex text-2xl cursor-pointer items-center'>
                 <span className='font-bold text-white'>
@@ -24,7 +24,7 @@ const Nav = () => {
 
         </div>
  
-            <ul className={`md:flex md:items-center md:pb-0 pb-12 md:static text-lg pl-4 bg-amber-800 md:gap-4 absolute md:z-auto z-[-1] left-0 w-full transition-all duration-700 ease-in ${isOpen ? 'top-16' : 'top-[-490px]'}`}>
+            <ul className={`md:flex md:items-center md:pb-0 pb-12 md:static text-lg pl-4 bg-marrom_escuro md:gap-4 absolute md:z-auto z-[-1] left-0 w-full transition-all duration-700 ease-in ${isOpen ? 'top-16' : 'top-[-490px]'}`}>
                 <li className='navbarLi'><a href="/">Quem Somos</a></li>
                 <li className='navbarLi'><a href="/">Animais Desaparecidos</a></li>
                 <li className='navbarLi'><a href="/">Quero Ajudar</a></li>

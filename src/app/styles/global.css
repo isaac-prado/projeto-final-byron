@@ -12,4 +12,8 @@ body {
     .navbarLi{
         @apply text-white font-medium md:ml-8 md:my-0 my-7 hover:text-gray-400 duration-500
     }
+
+    .footerLi{
+        @apply text-white hover:text-gray-400 duration-500 cursor-pointer
+    }
 }

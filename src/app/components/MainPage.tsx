@@ -15,10 +15,10 @@ const MainPage = () => {
         <main className="container mx-auto">
             <div className="grid lg:grid-cols-3 grid-cols-2 gap-2">
                 {cardList.map(card => (
-                    <div className="border-2 border-gray-300 shadow-lg rounded-lg cursor-pointer">
+                    <div className="border-2 border-gray-300 shadow-lg rounded-lg cursor-pointer bg-slate-100-100 hover:bg-slate-300 duration-300">
                         <img className="md:h-48 h-32 w-full  rounded-t-lg" src={card.img} alt=""/>
                         <div className="p-4">
-                            <h3 className="text-xl font-semibold text-amber-900 mb-2">{card.name}</h3>
+                            <h3 className="text-xl font-semibold text-marrom_escuro mb-2">{card.name}</h3>
                             <div className="tex-lg font-normal">
                                 <p>{card.city}</p> 
                                 <p>{card.animal}</p> 
