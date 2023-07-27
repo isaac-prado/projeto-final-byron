@@ -2,6 +2,8 @@ import Layout from '../components/layout'
 import { getCookie } from 'cookies-next';
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import Nav from '../components/Nav';
+import Footer from '../components/Footer';
 
 export default function SignupPage( {username} ) {
     const router = useRouter()
@@ -13,9 +15,10 @@ export default function SignupPage( {username} ) {
             :
                 <></>
             }
+            <Nav></Nav>
             <div className="flex flex-col space-y-4 px-4 py-8 sm:px-5 justify-center h-screen items-center border rounded bg-cinza"> 
-                <h2 className="text-marrom_escuro">Faça seu cadastro</h2>
-                <form action='/api/login' method='POST'>
+                <h2 className="text-marrom_escuro text-4xl">Faça seu cadastro</h2>
+                <form action='/private/doar' method='POST'>
                     <div>
                         <label
                         htmlFor="email"
@@ -82,6 +85,7 @@ export default function SignupPage( {username} ) {
                     <p className="my-5 text-center text-sm text-gray-600">Você já possui uma conta?{" "}<Link href="/login" className="font-semibold text-gray-800">Faça Login</Link>{" "}Agora </p>
                 </form>
           </div>
+          <Footer></Footer>
         </Layout>
     );
 }

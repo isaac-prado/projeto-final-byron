@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid'
+import Link from 'next/link'
 
 
 const Nav = () => {
@@ -22,15 +23,15 @@ const Nav = () => {
             </div>
  
             <ul className={`md:flex md:items-center justify-center md:pb-0 pb-12 md:static text-lg pl-4 bg-marrom_escuro md:gap-5 absolute md:z-auto z-[-1] left-0 w-full transition-all duration-700 ease-in ${isOpen ? 'top-14' : 'top-[-490px]'}`}>
-                <li className='navbarLi'><a href="/">Quem Somos</a></li>
-                <li className='navbarLi'><a href="/">Animais Desaparecidos</a></li>
-                <li className='navbarLi'><a href="/">Quero Ajudar</a></li>
-                <li className='navbarLi'><a href="/">Fale Conosco</a></li>
-                <li className='navbarLi'><a href="/">Quero Adotar</a></li>
-                <li className='navbarLi'><a href="/">Quero Doar</a></li>
+                <li className='navbarLi'><Link  href="/">Quem Somos</Link></li>
+                <li className='navbarLi'><Link  href="/">Animais Desaparecidos</Link> </li>
+                <li className='navbarLi'><Link  href="/">Quero Ajudar</Link></li>
+                <li className='navbarLi'><Link  href="/">Fale Conosco</Link> </li>
+                <li className='navbarLi'><Link  href="/">Quero Adotar</Link></li>
+                <li className='navbarLi'><Link  href="../pages/login">Quero Doar</Link></li>
 
                 <button className='btn bg-white text-black py-2 px-3 md:ml-8 rounded font-bold md:absolute md:right-4'>
-                Entrar
+                <Link  href="../pages/login">Entrar</Link>
                 </button>
             </ul>
             

@@ -28,7 +28,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "src/app/layout.jsx", "src/app/pages/login.jsx", "src/app/pages/_app.tsx", "src/app/pages/signup.tsx"  ],
+, "src/app/layout.jsx", "src/app/pages/login.tsx", "src/app/pages/_app.tsx", "src/app/pages/signup.jsx", "src/app/pages/login copy.jsx", "src/app/pages/login copy.jsx"  ],
   "exclude": [
     "node_modules"
   ]

@@ -2,6 +2,8 @@ import Layout from '../components/layout'
 import { getCookie } from 'cookies-next';
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import Nav from '../components/Nav';
+import Footer from '../components/Footer';
 
 export default function LoginPage( {username} ) {
     const router = useRouter()
@@ -13,9 +15,10 @@ export default function LoginPage( {username} ) {
             :
                 <></>
             }
+            <Nav></Nav>
           <div className="flex flex-col space-y-4 px-4 py-8 sm:px-5 justify-center h-screen items-center border rounded bg-cinza"> 
-            <h2 className="text-marrom_escuro">Faça seu login</h2>
-              <form action='/api/login' method='POST'>
+            <h2 className="text-marrom_escuro text-4xl">Faça seu login</h2>
+              <form action='/private/doar' method='POST'>
                   <div>
                     <label
                       htmlFor="email"
@@ -52,6 +55,7 @@ export default function LoginPage( {username} ) {
                   <p className="my-5 text-center text-sm text-gray-600">Ainda não possui uma conta?{" "}<Link href="/signup" className="font-semibold text-gray-800">Cadastre-se</Link>{" "}Agora </p>
               </form>
           </div>
+          <Footer></Footer>
         </Layout>
     );
 }
