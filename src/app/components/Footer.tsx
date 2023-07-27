@@ -1,4 +1,4 @@
-"use cdivent"
+"use client"
 
 const Footer = () => {
 
@@ -67,7 +67,6 @@ const Footer = () => {
                         <figure><img className="w-60 cursor-pointer" src="./footer/Logo.png" alt="Logo Byron Solutions" /></figure>
                     </a>
                 </div>
-
             </div>
         </div>
     </footer>
