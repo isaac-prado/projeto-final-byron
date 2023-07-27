@@ -8,7 +8,7 @@ const Nav = () => {
     let [isOpen, setisOpen] = useState(false)
 
   return (
-    <div className= 'shadow-md w-full fixed top-0 left-0'>
+    <div className= 'shadow-md w-full fixed top-0 inset-x-0'>
         <div className='md:flex justify-between items-center md:px-10 py-7 px-7 bg-marrom_escuro'>
             <div className='flex text-2xl cursor-pointer items-center'>
                 <img className="md:h-24 h-16 fixed left-0" src="./footer/segunda-chance.png" alt="" />
