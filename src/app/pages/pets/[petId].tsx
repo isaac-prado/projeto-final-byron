@@ -1,6 +1,6 @@
 "use client"
 
-const Animal = () => {
+const Pets = ( {id} ) => {
 
   return (
     <div className="mt-28 md:mx-20 m-6">
@@ -50,4 +50,4 @@ const Animal = () => {
   )
 }
 
-export default Animal
+export default Pets

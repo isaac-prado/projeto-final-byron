@@ -1,5 +1,6 @@
 export default [
     {
+        id: 1,
         img: "/images/cat1.jpeg",
         name: "Salém",
         city: "Itajubá, MG",
@@ -7,6 +8,7 @@ export default [
         size: "Porte pequeno",
     },
     {
+        id: 2,
         img: "/images/dog1.jpeg",
         name: "Farofa",
         city: "Itajubá, MG",
@@ -14,6 +16,7 @@ export default [
         size: "Porte grande",
     },
     {
+        id: 3,
         img: "/images/cat2.jpeg",
         name: "Mingau",
         city: "Itajubá, MG",
@@ -21,6 +24,7 @@ export default [
         size: "Porte pequeno",
     },
     {
+        id: 4,
         img: "/images/dog2.jpeg",
         name: "Zeus",
         city: "Itajubá, MG",
@@ -28,6 +32,7 @@ export default [
         size: "Porte médio",
     },
     {
+        id: 5,
         img: "/images/dog3.jpeg",
         name: "Aurélio",
         city: "Itajubá, MG",
@@ -35,6 +40,7 @@ export default [
         size: "Porte pequeno",
     },    
     {
+        id: 6,
         img: "/images/dog4.jpeg",
         name: "Abílio",
         city: "Itajubá, MG",

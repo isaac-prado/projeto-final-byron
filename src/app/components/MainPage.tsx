@@ -1,4 +1,5 @@
 "use client"
+import Link from "next/link"
 import cardList from "./data"
 
 const MainPage = () => {
@@ -12,25 +13,24 @@ const MainPage = () => {
             <h1 className="text-2xl font-semibold p-6">Encontre seu novo Amigo</h1>
         </div>
 
-
-
         <main className="container mx-auto">
-            <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-2">
-                {cardList.map(card => (
-                    <div className="border-2 border-gray-300 shadow-lg rounded-lg cursor-pointer bg-slate-100-100 hover:bg-slate-300 duration-300">
-                        <img className="md:h-48 h-32 w-full  rounded-t-lg" src={card.img} alt=""/>
-                        <div className="p-4">
-                            <h3 className="text-xl font-semibold text-marrom_escuro mb-2">{card.name}</h3>
-                            <div className="tex-lg font-medium text-gray-800 justify-center items-start">
-                                <p className="flex gap-2 mb-3"><img className="h-6" src="./footer/pin-de-localizacao.png" alt="" />{card.city}</p> 
-                                <p className="flex gap-2 mb-3"><img className="h-6" src="./footer/pata-de-cachorro.png" alt="" />  {card.animal}</p> 
-                                <p className="flex gap-2"><img className="h-6" src="./footer/tamanho-cachorro.png" alt="" />{card.size}</p> 
+                <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-2">
+                    {cardList.map(card => (
+                        <Link href={`/pets/${card.id}`}>
+                            <div className="border-2 border-gray-300 shadow-lg rounded-lg cursor-pointer bg-slate-100-100 hover:bg-slate-300 duration-300">
+                                <img className="md:h-48 h-32 w-full  rounded-t-lg" src={card.img} alt=""/>
+                                <div className="p-4">
+                                    <h3 className="text-xl font-semibold text-marrom_escuro mb-2">{card.name}</h3>
+                                    <div className="tex-lg font-medium text-gray-800 justify-center items-start">
+                                        <p className="flex gap-2 mb-3"><img className="h-6" src="./footer/pin-de-localizacao.png" alt="" />{card.city}</p> 
+                                        <p className="flex gap-2 mb-3"><img className="h-6" src="./footer/pata-de-cachorro.png" alt="" />  {card.animal}</p> 
+                                        <p className="flex gap-2"><img className="h-6" src="./footer/tamanho-cachorro.png" alt="" />{card.size}</p> 
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                ))}
-
-            </div>
+                        </Link>
+                    ))}
+                </div>
         </main>
     </div>
   )
