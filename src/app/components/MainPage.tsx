@@ -1,7 +1,6 @@
 "use client"
 import Link from "next/link"
 import cardList from "./data"
-import Link from 'next/link'
 
 const MainPage = () => {
   return (
@@ -14,12 +13,10 @@ const MainPage = () => {
             <h1 className="text-2xl font-semibold p-6">Encontre seu novo Amigo</h1>
         </div>
 
-
-
         <main className="container mx-auto">
                 <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-2">
                     {cardList.map(card => (
-                        <Link href={`/pages/pets/${card.id}`}>
+                        <Link href={`/pets/${card.id}`}>
                             <div className="border-2 border-gray-300 shadow-lg rounded-lg cursor-pointer bg-slate-100-100 hover:bg-slate-300 duration-300">
                                 <img className="md:h-48 h-32 w-full  rounded-t-lg" src={card.img} alt=""/>
                                 <div className="p-4">
