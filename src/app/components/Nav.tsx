@@ -12,7 +12,9 @@ const Nav = () => {
     <div className= 'shadow-md w-full fixed top-0 inset-x-0'>
         <div className='md:flex justify-between items-center md:px-10 py-7 px-7 bg-marrom_escuro'>
             <div className='flex text-2xl cursor-pointer items-center'>
-                <img className="md:h-24 h-16 fixed left-0" src="./footer/segunda-chance.png" alt="" />
+                <Link className="fixed left-0" href={"/"}>
+                    <img className="md:h-24 h-16 " src="./footer/segunda-chance.png" alt="" />
+                </Link>
             </div>
             
             <div onClick={() => setisOpen(!isOpen)} className='h-7 w-7 absolute right-8 top-4 cursor-pointer md:hidden text-white'>
