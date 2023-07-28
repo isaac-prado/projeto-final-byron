@@ -1,6 +1,6 @@
 "use client"
 
-import cardList from "../components/data";
+import cardList from "../../components/data";
 
 
 const Animal = () => {

@@ -1,19 +1,19 @@
-import DataButtons from '../../components/DataButtons';
-import LocationSelect from '../../components/LocationSelect';
-import Nav from '../../components/Nav';
-import Footer from '../../components/Footer';
+import DataButtons from '../../../components/DataButtons';
+import LocationSelect from '../../../components/LocationSelect';
+import Nav from '../../../components/Nav';
+import Footer from '../../../components/Footer';
 
 export default function Doar () {
   return (
     <>
-    <Nav></Nav>
+    <Nav/>
     <div className="flex flex-col space-y-4 px-4 py-8 sm:px-5 justify-center h-screen items-center border rounded bg-cinza"> 
           <h2 className="text-marrom_escuro text-4xl">Cadastre um pet para adoção</h2>
             <form action='/api/login' method='POST'>
                 <div>
                   <label
                     htmlFor="nome"
-                    className="block text-xs text-gray-600 uppercase"
+                    className="block text-xl text-gray-600"
                   >
                     Nome do bichinho:
                   </label>
@@ -29,7 +29,7 @@ export default function Doar () {
                 <div className="inline-flex items-baseline my-5 mt-1 block w-full">
                   <label
                     htmlFor="especie"
-                    className="block text-xs text-gray-600 uppercase me-5"
+                    className="block text-xl text-gray-600 me-5"
                   >
                     Espécie:
                   </label>
@@ -42,7 +42,7 @@ export default function Doar () {
                   />
                   <label
                     htmlFor="sexo"
-                    className="block text-xs text-gray-600 uppercase mx-5"
+                    className="block text-xl text-gray-600 mx-5"
                   >
                     Sexo:
                   </label>
@@ -57,7 +57,7 @@ export default function Doar () {
                 <div className="inline-flex items-baseline my-5 mt-1 block w-full">
                   <label
                     htmlFor="idade"
-                    className="block text-xs text-gray-600 uppercase me-5"
+                    className="block text-xl text-gray-600 me-5"
                   >
                     Idade:
                   </label>
@@ -70,7 +70,7 @@ export default function Doar () {
                   />
                   <label
                     htmlFor="porte"
-                    className="block text-xs text-gray-600 uppercase mx-5"
+                    className="block text-xl text-gray-600 mx-5"
                   >
                     Porte:
                   </label>
@@ -87,7 +87,7 @@ export default function Doar () {
                 <div>
                   <label
                     htmlFor="texto"
-                    className="block text-xs text-gray-600 uppercase"
+                    className="block text-xl text-gray-600"
                   >
                     Conte a história do animal:
                   </label>
@@ -101,7 +101,7 @@ export default function Doar () {
                 <div className="inline-flex items-baseline my-5 mt-1 block w-full">
                   <label
                     htmlFor="foto"
-                    className="block text-xs text-gray-600 uppercase me-5"
+                    className="block text-xl text-gray-600 me-5"
                   >
                     Foto principal:
                   </label>
@@ -114,7 +114,7 @@ export default function Doar () {
                   />
                   <label
                     htmlFor="foto"
-                    className="block text-xs text-gray-600 uppercase mx-5"
+                    className="block text-xl text-gray-600 mx-5"
                   >
                     Outras fotos:
                   </label>
@@ -127,8 +127,8 @@ export default function Doar () {
                   />
                 </div>
                 <DataButtons/>
-                <input type="submit" value="Salvar" className=" flex h-10 w-full items-center justify-center rounded-md border text-sm transition-all focus:outline-none border-marrom_escuro bg-marrom_escuro text-white hover:bg-white hover:text-marrom_escuro"/>              </form>
-                <Footer></Footer>
+                <input type="submit" value="Salvar" className=" text-xl flex h-10 w-full items-center justify-center rounded-md border text-sm transition-all focus:outline-none border-marrom_escuro bg-marrom_escuro text-white hover:bg-white hover:text-marrom_escuro"/>              </form>
+                <Footer/>
         </div>
     </>
     
