@@ -6,7 +6,6 @@ import Footer from '../../components/Footer';
 export default function SignupPage( {username} ) {
     return (
         <>
-            <Nav/>
             <div className="flex flex-col space-y-4 px-4 py-8 sm:px-5 justify-center h-screen items-center border rounded bg-cinza"> 
                 <h2 className="text-marrom_escuro text-4xl">Faça seu cadastro</h2>
                 <form action='./private/inicial' method='POST'>
@@ -76,7 +75,6 @@ export default function SignupPage( {username} ) {
                     <p className="my-5 text-center text-xl text-gray-600">Você já possui uma conta?{" "}<Link href="./pages/login" className="font-semibold text-gray-800">Faça Login</Link>{" "}Agora </p>
                 </form>
           </div>
-          <Footer/>
         </>
     );
     }

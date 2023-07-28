@@ -13,7 +13,7 @@ const Nav = () => {
         <div className='md:flex justify-between items-center md:px-10 py-7 px-7 bg-marrom_escuro'>
             <div className='flex text-2xl cursor-pointer items-center'>
                 <Link className="fixed left-0" href={"/"}>
-                    <img className="md:h-24 h-16 " src="./footer/segunda-chance.png" alt="" />
+                    <img className="ms-20 md:h-24 h-16 " src="./footer/segunda-chance.png" alt="" />
                 </Link>
             </div>
             
@@ -32,7 +32,7 @@ const Nav = () => {
                 <li className='navbarLi'><Link  href="/">Quero Adotar</Link></li>
                 <li className='navbarLi'><Link  href="../pages/login">Quero Doar</Link></li>
 
-                <button className='btn bg-white text-black py-2 px-3 md:ml-8 rounded font-bold md:absolute md:right-4'>
+                <button className='me-20 btn bg-white text-black py-2 px-3 md:ml-8 rounded font-bold md:absolute md:right-4'>
                 <Link  href="/pages/login">Entrar</Link>
                 </button>
             </ul>
