@@ -1,5 +1,6 @@
 export default [
     {
+        
         img: "/images/cat1.jpeg",
         name: "Salém",
         city: "Itajubá, MG",

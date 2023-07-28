@@ -45,7 +45,7 @@ export default function Login( {username} ) {
                       className="my-5 mt-1 block w-full appearance-none rounded-md border border-marrom_claro px-3 py-2 placeholder-gray-400 shadow-sm focus:border-black focus:outline-none focus:ring-black sm:text-sm"
                     />
                   </div>
-                  <input type="submit" value="Entrar" className=" text-xl flex h-10 w-full items-center justify-center rounded-md border text-sm transition-all focus:outline-none border-rosa bg-rosa text-black hover:bg-white hover:text-rosa"/>
+                  <input type="submit" value="Entrar" className=" text-xl flex h-10 w-full items-center justify-center rounded-md border transition-all focus:outline-none border-rosa bg-rosa text-black hover:bg-white hover:text-rosa"/>
                   <p className="my-5 text-center text-xl text-gray-600">Ainda não possui uma conta?{" "}<Link href="./pages/signup" className="font-semibold text-gray-800">Cadastre-se</Link>{" "}Agora </p>
               </form>
           </div>
