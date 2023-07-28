@@ -10,38 +10,38 @@ const Footer = () => {
 
                     <div className="text-xl">
                         ADOTE
-                        <div className="font-medium pt-2 hidden md:flex text-base">
-                            Pesquisar Animais
+                        <div className="font-medium pt-2 hidden md:flex text-base justify-center">
+                        <a href="../">Pesquisar Animais </a>
                         </div>
                     </div>
                     <div className="text-xl">
                         COLABORE
-                        <div className="font-medium pt-2 hidden md:flex text-base">
+                        <div className="font-medium pt-2 hidden md:flex text-base justify-center">
                             Doe qualquer valor
                         </div>
                     </div>
                     <div className="text-xl">
                         DIVULGUE SEU ANIMAL
                         <div className="font-medium pt-2 hidden md:flex text-base justify-center">
-                            Cadastrar animal
+                            <a href="../pages/private/doar">Cadastrar animal</a>
                         </div>
                     </div>
                     <div className="mt-4 md:mt-0 text-xl">
                         SOBRE
-                        <div className="font-medium pt-2 hidden md:flex text-base">
+                        <div className="font-medium pt-2 hidden md:flex text-base justify-center">
                             Sobre o Segunda Chance
                         </div>
-                        <div className="font-medium hidden md:flex text-base">
+                        <div className="font-medium hidden md:flex text-base justify-center">
                             Perguntas Frequentes
                         </div>
                     </div>
                     <div className="col-start-3 mt-4 md:mt-0 text-xl">
                         PERFIL
-                        <div className="font-medium pt-2 hidden md:flex text-base">
-                            Meu perfil
+                        <div className="font-medium pt-2 hidden md:flex text-base justify-center">
+                        <a href="../pages/login">Meu perfil</a>
                         </div>
-                        <div className="font-medium hidden md:flex text-base">
-                            Cadastre-se
+                        <div className="font-medium hidden md:flex text-base justify-center">
+                        <a href="../pages/signup">Cadastre-se</a>
                         </div>
                     </div>
                 </div>
