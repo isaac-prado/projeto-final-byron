@@ -16,7 +16,7 @@ const MainPage = () => {
         <main className="container mx-auto">
                 <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-2">
                     {cardList.map(card => (
-                        <Link href={`/pets/${card.id}`}>
+                        <Link href={`../pages/pets/`}>
                             <div className="border-2 border-gray-300 shadow-lg rounded-lg cursor-pointer bg-slate-100-100 hover:bg-slate-300 duration-300">
                                 <img className="md:h-48 h-32 w-full  rounded-t-lg" src={card.img} alt=""/>
                                 <div className="p-4">
