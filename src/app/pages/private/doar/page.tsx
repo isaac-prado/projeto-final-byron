@@ -7,7 +7,7 @@ export default function Doar () {
   return (
     <>
     <Nav/>
-    <div className="flex flex-col space-y-4 px-4 py-8 sm:px-5 justify-center h-screen items-center border rounded bg-cinza"> 
+    <div className="flex flex-col mt-20 md:p-10 p-6 justify-center h-screen items-center border rounded bg-cinza"> 
           <h2 className="text-marrom_escuro text-4xl">Cadastre um pet para adoção</h2>
             <form action='/api/login' method='POST'>
                 <div>
@@ -127,9 +127,10 @@ export default function Doar () {
                   />
                 </div>
                 <DataButtons/>
-                <input type="submit" value="Salvar" className=" text-xl flex h-10 w-full items-center justify-center rounded-md border text-sm transition-all focus:outline-none border-marrom_escuro bg-marrom_escuro text-white hover:bg-white hover:text-marrom_escuro"/>              </form>
-                <Footer/>
+                <input type="submit" value="Salvar" className=" text-xl flex h-10 w-full items-center justify-center rounded-md border text-sm transition-all focus:outline-none border-marrom_escuro bg-marrom_escuro text-white hover:bg-white hover:text-marrom_escuro"/>              
+                </form>
         </div>
+        <Footer/>
     </>
     
 )

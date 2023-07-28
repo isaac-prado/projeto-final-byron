@@ -1,15 +1,12 @@
 "use client"
-import Layout from '../../components/layout'
-import { getCookie } from 'cookies-next';
 import Link from 'next/link'
-import { useRouter } from 'next/router'
 import Nav from '../../components/Nav';
 import Footer from '../../components/Footer';
 
 export default function Login( {username} ) {
     return (
-        <Layout pageTitle="Login">
-            <Nav/>
+        <>
+          <Nav/>
           <div className="flex flex-col space-y-4 px-4 py-8 sm:px-5 justify-center h-screen items-center border rounded bg-cinza"> 
             <h2 className="text-marrom_escuro text-4xl">Faça seu login</h2>
               <form action='./private/inicial' method='POST'>
@@ -50,6 +47,6 @@ export default function Login( {username} ) {
               </form>
           </div>
           <Footer/>
-        </Layout>
+          </>
     );
 }
