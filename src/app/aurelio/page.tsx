@@ -1,6 +1,6 @@
 "use client"
 import { useState } from "react"
-import Modal from "../../components/Modal"
+import Modal from "../components/Modal"
 
 const Pets = () => {
     const [ openModal, setOpenModal ] = useState(false)
@@ -30,13 +30,13 @@ const Pets = () => {
 
                     <div className="md:col-start-1 md:mr-8">
                         <div className="items-center justify-center mt-4">
-                            <img className="w-full rounded-md" src="./images/dog3.jpeg" alt="" />
+                            <img className="w-full rounded-md" src="./images/aurelio.jpeg" alt="" />
                         </div>
                         <div className="grid grid-cols-3 items-center justify-center">
-                            <picture><img className="rounded-md" src="./images/dog3.jpeg" alt="" /></picture>
-                            <img className="rounded-md" src="./images/dog3.jpeg" alt="" />
-                            <img className="rounded-md" src="./images/dog3.jpeg" alt="" />
-                            <img className="rounded-md" src="./images/dog3.jpeg" alt="" />
+                            <picture><img className="rounded-md" src="./images/aurelio.jpeg" alt="" /></picture>
+                            <img className="rounded-md" src="./images/aurelio.jpeg" alt="" />
+                            <img className="rounded-md" src="./images/aurelio.jpeg" alt="" />
+                            <img className="rounded-md" src="./images/aurelio.jpeg" alt="" />
                         </div>
                     </div>
 
@@ -55,8 +55,8 @@ const Pets = () => {
                             <div className="flex-col items-center text-center gap-4 font-bold">
                                 <h2 className="text-3xl mb-4">Quer Adotar?</h2>
                                 <p>Para adotar esse pet ou saber mais sobre ele, entre em contato com o dono:</p>
-                                <p className="mt-4"><img src="./footer/whatsapp.png" alt="" />(xx)xxxx-xxxx</p>
-                                <p><img src="./footer/email.png" alt="" />email@email.com</p>
+                                <p className="mt-4 flex gap-2"><img src="./footer/whatsapp.png" alt="" />(xx)xxxx-xxxx</p>
+                                <p className="flex gap-2"><img src="./footer/email.png" alt="" />email@email.com</p>
                             </div>
                         </Modal>
                     </div>
