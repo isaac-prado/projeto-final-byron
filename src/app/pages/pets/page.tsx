@@ -1,6 +1,10 @@
 "use client"
+import { useState } from "react"
+import Modal from "../../components/Modal"
 
 const Pets = () => {
+    const [ openModal, setOpenModal ] = useState(false)
+
     return (
         <div className="mt-28 md:mx-20 m-6">
             <div className="flex-col w-full">
@@ -18,7 +22,7 @@ const Pets = () => {
                             <p className="flex gap-2"><img src="./footer/pin-de-localizacao.png" alt="Pin de localização" />Itajubá, MG</p>
                         </div>
                         <div className="mt-2 ml-1">
-                            <p className="flex gap-2"><img className="w-6 h-6" src="./footer/homem-usuario.png" alt="Usuário que publicou" />Publicado por Solidaripatas</p>
+                            <p className="flex gap-2"><img src="./footer/homem-usuario.png" alt="Usuário que publicou" />Publicado por Solidaripatas</p>
                         </div>
                     </div>
 
@@ -27,7 +31,7 @@ const Pets = () => {
                             <img className="w-full rounded-md" src="./images/dog3.jpeg" alt="" />
                         </div>
                         <div className="grid grid-cols-3 items-center justify-center">
-                            <img className="rounded-md" src="./images/dog3.jpeg" alt="" />
+                            <picture><img className="rounded-md" src="./images/dog3.jpeg" alt="" /></picture>
                             <img className="rounded-md" src="./images/dog3.jpeg" alt="" />
                             <img className="rounded-md" src="./images/dog3.jpeg" alt="" />
                             <img className="rounded-md" src="./images/dog3.jpeg" alt="" />
@@ -40,10 +44,18 @@ const Pets = () => {
                     </div>
 
                     <div className="text-center font-semibold mt-4">
-                        <button className="text-2xl bg-red-300 py-4 px-7 mt-6 rounded-lg shadow-lg">
+                        <button onClick={() => setOpenModal(true)} className="text-2xl bg-red-300 py-4 px-7 mt-6 rounded-lg shadow-lg">
                             QUERO ADOTAR
                         </button>
                     </div>
+                    <Modal isOpen={openModal} setOpenModal={() => setOpenModal(!openModal)}>
+                        <div className="flex-col items-center text-center gap-4 font-bold">
+                            <h2 className="text-3xl mb-4">Quer Adotar?</h2>
+                            <p>Para adotar esse pet ou saber mais sobre ele, entre em contato com o dono:</p>
+                            <p className="mt-4 gap-2"><img src="./footer/whatsapp.png" alt="" />(xx)xxxx-xxxx</p>
+                            <p className="gap-2"><img src="./footer/email.png" alt="" />email@email.com</p>
+                        </div>
+                    </Modal>
 
                 </div>
             </div>
