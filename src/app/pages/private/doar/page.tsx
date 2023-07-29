@@ -1,9 +1,15 @@
+
+"use client"
 import DataButtons from '../../../components/DataButtons';
 import LocationSelect from '../../../components/LocationSelect';
 import Nav from '../../../components/Nav';
 import Footer from '../../../components/Footer';
+import Modal from "../../../components/Modal"
+import { useState } from "react"
 
-export default function Doar () {
+const Doar = () => {
+  const [ openModal, setOpenModal ] = useState(false)
+
   return (
     <>
     <div className="mt-14 xl:m-72 md:m-36 flex flex-col mt-20 md:p-10 p-6 justify-center items-center border rounded bg-cinza"> 
@@ -126,10 +132,24 @@ export default function Doar () {
                   />
                 </div>
                 <DataButtons/>
-                <input type="submit" value="Salvar" className=" text-xl flex h-10 w-full items-center justify-center rounded-md border text-sm transition-all focus:outline-none border-marrom_escuro bg-marrom_escuro text-white hover:bg-white hover:text-marrom_escuro"/>              
-                </form>
+                <div className="md:col-start-2">
+                        <div className="text-center font-semibold mt-4">
+                            <button onClick={() => setOpenModal(true)} className="text-xl flex h-10 w-full items-center justify-center rounded-md border text-sm transition-all focus:outline-none border-marrom_escuro bg-marrom_escuro text-white hover:bg-white hover:text-marrom_escuro">
+                                Salvar
+                            </button>
+                        </div>
+                        <Modal isOpen={openModal} setOpenModal={() => setOpenModal(!openModal)}>
+                            <div className="flex-col items-center text-center gap-4 font-bold">
+                                <h2 className="text-3xl mb-4">Seu pet foi cadastrado</h2>
+                                <p>Esses são seus dados de contatpo cadastrados que as pessoas verão:</p>
+                                <p className="mt-4 flex gap-2"><img src="./footer/whatsapp.png" alt="" />(xx)xxxx-xxxx</p>
+                                <p className="flex gap-2"><img src="./footer/email.png" alt="" />email@email.com</p>
+                            </div>
+                        </Modal>
+                    </div>                </form>
         </div>
     </>
     
 )
 }
+export default Doar
