@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 export default function SignupPage() {
     return (
         <>
-            <div className="mt-14 xl:m-72 md:m-36 flex flex-col space-y-4 px-4 py-8 sm:px-5 justify-center items-center border rounded bg-cinza"> 
+            <div className="my-72 xl:m-72 md:m-36 flex flex-col space-y-4 px-4 py-8 sm:px-5 justify-center items-center border rounded bg-cinza"> 
                 <h2 className="text-marrom_escuro text-4xl">Faça seu cadastro</h2>
                 <form action='./inicial' method='POST'>
                     <div>
