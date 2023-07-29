@@ -6,7 +6,7 @@ import Footer from '../../../components/Footer';
 export default function Doar () {
   return (
     <>
-    <div className="flex flex-col mt-20 md:p-10 p-6 justify-center h-screen items-center border rounded bg-cinza"> 
+    <div className="mt-14 xl:m-72 md:m-36 flex flex-col mt-20 md:p-10 p-6 justify-center items-center border rounded bg-cinza"> 
           <h2 className="text-marrom_escuro text-4xl">Cadastre um pet para adoção</h2>
             <form action='/api/login' method='POST'>
                 <div>
