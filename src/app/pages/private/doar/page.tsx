@@ -3,9 +3,9 @@
 import DataButtons from '../../../components/DataButtons';
 import LocationSelect from '../../../components/LocationSelect';
 import Nav from '../../../components/Nav';
-import Footer from '../../../components/Footer';
 import Modal from "../../../components/Modal"
 import { useState } from "react"
+import Footer from '../../../components/Footer';
 
 const Doar = () => {
   const [ openModal, setOpenModal ] = useState(false)
@@ -141,9 +141,9 @@ const Doar = () => {
                         <Modal isOpen={openModal} setOpenModal={() => setOpenModal(!openModal)}>
                             <div className="flex-col items-center text-center gap-4 font-bold">
                                 <h2 className="text-3xl mb-4">Seu pet foi cadastrado</h2>
-                                <p>Esses são seus dados de contatpo cadastrados que as pessoas verão:</p>
-                                <p className="mt-4 flex gap-2"><img src="./footer/whatsapp.png" alt="" />(xx)xxxx-xxxx</p>
-                                <p className="flex gap-2"><img src="./footer/email.png" alt="" />email@email.com</p>
+                                <p>Esses são os dados de contato cadastrados que as pessoas verão:</p>
+                                <p className="mt-4 flex gap-2"><img src="../../../../../public/footer/whatsapp.png" alt="" />(xx)xxxx-xxxx</p>
+                                <p className="flex gap-2"><img src="../../../../../public/footer/email.png" alt="" />email@email.com</p>
                             </div>
                         </Modal>
                     </div>                </form>

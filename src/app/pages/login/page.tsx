@@ -3,13 +3,13 @@ import Link from 'next/link'
 import Nav from '../../components/Nav';
 import Footer from '../../components/Footer';
 
-export default function Login( {username} ) {
+export default function Login( ) {
     return (
         <>
           <div className=""> 
-          <div className="mt-14 xl:m-72 md:m-36 flex flex-col space-y-4 px-4 py-8 sm:px-5 justify-center items-center border rounded bg-cinza"> 
+          <div className="mt-14 xl:m-72 xl:mx-96 md:m-36 flex flex-col space-y-4 px-4 py-8 sm:px-5 justify-center items-center border rounded bg-cinza"> 
             <h2 className="text-marrom_escuro text-4xl">Faça seu login</h2>
-              <form action='./private/inicial' method='POST'>
+              <form action='./private/doar'>
                   <div>
                     <label
                       htmlFor="email"

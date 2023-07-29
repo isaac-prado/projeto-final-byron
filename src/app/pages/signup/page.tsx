@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Nav from '../../components/Nav';
 import Footer from '../../components/Footer';
 
-export default function SignupPage( {username} ) {
+export default function SignupPage() {
     return (
         <>
             <div className="mt-14 xl:m-72 md:m-36 flex flex-col space-y-4 px-4 py-8 sm:px-5 justify-center items-center border rounded bg-cinza"> 

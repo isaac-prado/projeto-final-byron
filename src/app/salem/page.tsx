@@ -1,6 +1,7 @@
 "use client"
 import { useState } from "react"
 import Modal from "../components/Modal"
+import cardList from "../components/dataButton"
 
 const Pets = () => {
     const [ openModal, setOpenModal ] = useState(false)
@@ -15,7 +16,7 @@ const Pets = () => {
                                 SALÉM
                             </div>
                             <div className="text-lg text-marrom_claro">
-                                Gato | Macho | Porte Pequeno
+                                Cachorro | Macho | Filhote | Porte Pequeno
                             </div>
                         </div>
                         <div className="font-bold pt-5">
@@ -29,25 +30,32 @@ const Pets = () => {
                     </div>
 
                     <div className="md:col-start-1 md:mr-8">
-                        <div className="items-center justify-center mt-4 mb-2">
-                            <img className="w-full rounded-md" src="./images/salem.jpeg" alt="" />
+                        <div className="items-center justify-center mt-4">
+                            <img className="w-full rounded-md" src="./images/abilio.jpeg" alt="" />
                         </div>
                         <div className="grid grid-cols-3 items-center justify-center">
-                            <picture><img className="rounded-md" src="./images/salem.jpeg" alt="" /></picture>
-                            <img className="rounded-md" src="./images/salem.jpeg" alt="" />
-                            <img className="rounded-md" src="./images/salem.jpeg" alt="" />
-                            <img className="rounded-md" src="./images/salem.jpeg" alt="" />
+                            <picture><img className="rounded-md" src="./images/abilio.jpeg" alt="" /></picture>
+                            <img className="rounded-md" src="./images/abilio.jpeg" alt="" />
+                            <img className="rounded-md" src="./images/abilio.jpeg" alt="" />
+                            <img className="rounded-md" src="./images/abilio.jpeg" alt="" />
                         </div>
                     </div>
 
-                    <div className="text-center md:text-left md:mt-12 mt-4 md:col-span-2">
-                        <p className="text-2xl font-semibold text-marrom_escuro md:mb-4">A história do Salém</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos harum sunt cupiditate enim quo debitis ipsam sit magnam illum tempora, vitae, ipsa doloremque delectus expedita obcaecati. Odit, voluptate esse nesciunt sint cum, nemo temporibus error officiis dolore sapiente harum repellendus? Fugit doloribus et doloremque, fuga repellendus eum consectetur eligendi quis aliquid molestiae vitae ea officia, repudiandae in autem, velit similique? Error, unde enim. Obcaecati facere odio est ab! Totam, quia? Quo illo sunt optio, tenetur dolorem architecto possimus labore nostrum. Et similique veritatis, quaerat esse dicta qui magnam commodi aperiam quia reiciendis ullam minus nobis eos dolorum facilis hic obcaecati a dolorem, suscipit at? Cum id quisquam, laudantium maxime perspiciatis deserunt minima totam possimus, eligendi odio iste assumenda neque hic alias non vel, velit voluptate corrupti quaerat eaque sit similique placeat nostrum! Quae, laudantium libero assumenda odit veniam vero distinctio. Ipsa itaque error cumque animi dignissimos ipsam perferendis consequuntur veritatis eum molestiae nihil sint praesentium, blanditiis nostrum repudiandae obcaecati, magni officiis similique tempora? Ratione ut quaerat voluptate cum ullam. Sequi eveniet rerum sit eius praesentium deleniti, a vitae tempora debitis unde tempore voluptate, ipsam cum cupiditate explicabo sint quia commodi facilis hic. Fuga quis ad consequatur repudiandae asperiores in quos voluptate illo cupiditate placeat, reprehenderit esse maiores labore pariatur numquam velit? Nobis, tempore porro vero consequuntur qui, ullam voluptas modi voluptates, rerum sed illum maxime voluptatem. Sed, corrupti. Cum nostrum eaque culpa aperiam voluptatibus doloribus eos officiis! Quod placeat tempora corrupti ipsum tenetur et aut earum, ullam, praesentium iure, ex odit laborum? Ratione consequatur tenetur unde, labore modi quidem adipisci quo, voluptates nisi similique itaque quaerat debitis autem corrupti, porro numquam cum iste quas maxime dolores? Quidem ipsum doloribus molestiae enim beatae quis voluptatem sequi, molestias cupiditate ipsam maxime modi harum quia pariatur earum porro aliquid amet blanditiis necessitatibus consequatur?</p>
+                    <div className="text-center md:text-left md:mt-12 mt-4 md:col-span-2 w-2/3">
+                        <p className="text-2xl font-semibold text-marrom_escuro md:mb-4">A história do Aurélio</p>
+                        <p>abilio é um cão de porte médio com uma pelagem caramelo brilhante e olhos expressivos que irão derreter seu coração. Ele foi resgatado das ruas e acolhido em um abrigo, onde mostrou uma personalidade brincalhona e afetuosa desde o início. Com aproximadamente dois anos de idade, abilio é um companheiro animado e energético. Ele adora correr, brincar com uma bola e explorar o mundo ao seu redor. Seu espírito aventureiro vai te inspirar a aproveitar a vida ao máximo. abilio também é um cachorro extremamente inteligente e aprende com rapidez. Ele está ansioso para encontrar um dono dedicado que possa continuar a estimular sua mente ágil e ensinar truques divertidos. Com amor e paciência, abilio tem todo o potencial para se tornar um companheiro leal e obediente.</p>
+                        <p className="mt-4 text-2xl font-semibold text-marrom_escuro md:mb-4">Mais informações sobre Aurélio</p>
+                        <div className="m-5">
+                     {cardList.map(card => (
+                    <div className="inline-flex items-baseline">
+                        <button type="button" className="m-5 h-10 text-xl items-center justify-center rounded-md border text-sm transition-all focus:outline-none border-rosa bg-rosa text-black hover:bg-white hover:text-rosa">
+                        {card.label}
+                        </button>
                     </div>
-
+                    ))}
                     <div className="md:col-start-2">
                         <div className="text-center font-semibold mt-4">
-                            <button onClick={() => setOpenModal(true)} className="text-2xl bg-red-300 py-4 px-7 mt-6 rounded-lg shadow-lg">
+                            <button onClick={() => setOpenModal(true)} className="text-xl flex h-10 w-full items-center justify-center rounded-md border text-sm transition-all focus:outline-none border-marrom_escuro bg-marrom_escuro text-white hover:bg-white hover:text-marrom_escuro">
                                 QUERO ADOTAR
                             </button>
                         </div>
@@ -59,6 +67,8 @@ const Pets = () => {
                                 <p className="flex gap-2"><img src="./footer/email.png" alt="" />email@email.com</p>
                             </div>
                         </Modal>
+                    </div>
+            </div>
                     </div>
 
                 </div>
