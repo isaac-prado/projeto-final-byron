@@ -1,11 +1,10 @@
-
 "use client"
-import DataButtons from '../../../components/DataButtons';
-import LocationSelect from '../../../components/LocationSelect';
-import Nav from '../../../components/Nav';
-import Modal from "../../../components/Modal"
+import DataButtons from '../components/DataButtons';
+import LocationSelect from '../components/LocationSelect';
+import Nav from '../components/Nav';
+import Modal from "../components/Modal"
 import { useState } from "react"
-import Footer from '../../../components/Footer';
+import Footer from '../components/Footer';
 
 const Doar = () => {
   const [ openModal, setOpenModal ] = useState(false)
@@ -14,7 +13,7 @@ const Doar = () => {
     <>
     <div className="mt-14 xl:m-72 md:m-36 flex flex-col mt-20 md:p-10 p-6 justify-center items-center border rounded bg-cinza"> 
           <h2 className="text-marrom_escuro text-4xl">Cadastre um pet para adoção</h2>
-            <form action='/api/login' method='POST'>
+            <form action='submit' method='POST'>
                 <div>
                   <label
                     htmlFor="nome"
@@ -142,8 +141,8 @@ const Doar = () => {
                             <div className="flex-col items-center text-center gap-4 font-bold">
                                 <h2 className="text-3xl mb-4">Seu pet foi cadastrado</h2>
                                 <p>Esses são os dados de contato cadastrados que as pessoas verão:</p>
-                                <p className="mt-4 flex gap-2"><img src="../../../../../public/footer/whatsapp.png" alt="" />(xx)xxxx-xxxx</p>
-                                <p className="flex gap-2"><img src="../../../../../public/footer/email.png" alt="" />email@email.com</p>
+                                <p className="mt-4 flex gap-2"><img src="./footer/whatsapp.png" alt="" />(xx)xxxx-xxxx</p>
+                                <p className="flex gap-2"><img src="./footer/email.png" alt="" />email@email.com</p>
                             </div>
                         </Modal>
                     </div>                </form>

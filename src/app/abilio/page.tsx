@@ -41,7 +41,7 @@ const Pets = () => {
                         </div>
                     </div>
 
-                    <div className="text-center md:text-left md:mt-12 mt-4 md:col-span-2 w-2/3">
+                    <div className="text-center md:text-left md:mt-12 mt-4 md:col-span-2 ">
                         <p className="text-2xl font-semibold text-marrom_escuro md:mb-4">A história do Aurélio</p>
                         <p>abilio é um cão de porte médio com uma pelagem caramelo brilhante e olhos expressivos que irão derreter seu coração. Ele foi resgatado das ruas e acolhido em um abrigo, onde mostrou uma personalidade brincalhona e afetuosa desde o início. Com aproximadamente dois anos de idade, abilio é um companheiro animado e energético. Ele adora correr, brincar com uma bola e explorar o mundo ao seu redor. Seu espírito aventureiro vai te inspirar a aproveitar a vida ao máximo. abilio também é um cachorro extremamente inteligente e aprende com rapidez. Ele está ansioso para encontrar um dono dedicado que possa continuar a estimular sua mente ágil e ensinar truques divertidos. Com amor e paciência, abilio tem todo o potencial para se tornar um companheiro leal e obediente.</p>
                         <p className="mt-4 text-2xl font-semibold text-marrom_escuro md:mb-4">Mais informações sobre Aurélio</p>

@@ -1,7 +1,7 @@
 "use client"
 import Link from 'next/link'
-import Nav from '../../components/Nav';
-import Footer from '../../components/Footer';
+import Nav from '../components/Nav';
+import Footer from '../components/Footer';
 
 export default function Login( ) {
     return (
@@ -9,7 +9,7 @@ export default function Login( ) {
           <div className=""> 
           <div className="mt-14 xl:m-72 xl:mx-96 md:m-36 flex flex-col space-y-4 px-4 py-8 sm:px-5 justify-center items-center border rounded bg-cinza"> 
             <h2 className="text-marrom_escuro text-4xl">Faça seu login</h2>
-              <form action='./private/doar'>
+              <form action='./inicial'>
                   <div>
                     <label
                       htmlFor="email"
@@ -43,7 +43,7 @@ export default function Login( ) {
                     />
                   </div>
                   <input type="submit" value="Entrar" className=" text-xl flex h-10 w-full items-center justify-center rounded-md border transition-all focus:outline-none border-rosa bg-rosa text-black hover:bg-white hover:text-rosa"/>
-                  <p className="my-5 text-center text-xl text-gray-600">Ainda não possui uma conta?{" "}<Link href="./pages/signup" className="font-semibold text-gray-800">Cadastre-se</Link>{" "}Agora </p>
+                  <p className="my-5 text-center text-xl text-gray-600">Ainda não possui uma conta?{" "}<Link href="./signup" className="font-semibold text-gray-800">Cadastre-se</Link>{" "}Agora </p>
               </form>
           </div>
           </div>

@@ -30,10 +30,10 @@ const Nav = () => {
                 <li className='navbarLi'><Link  href="/">Quero Ajudar</Link></li>
                 <li className='navbarLi'><Link  href="/">Fale Conosco</Link> </li>
                 <li className='navbarLi'><Link  href="/">Quero Adotar</Link></li>
-                <li className='navbarLi'><Link  href="../pages/login">Quero Doar</Link></li>
+                <li className='navbarLi'><Link  href="/login">Quero Doar</Link></li>
 
                 <button className='me-20 btn bg-white text-black py-2 px-3 md:ml-8 rounded font-bold md:absolute md:right-4'>
-                <Link  href="/pages/login">Entrar</Link>
+                <Link  href="/login">Entrar</Link>
                 </button>
             </ul>
             
